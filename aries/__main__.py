@@ -69,7 +69,8 @@ from aries.modules.sql import users_sql as sql
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Private Message."
 HELP_IMG = "https://telegra.ph/file/ac893610cae84f302b2da.jpg"
 GROUP_START_IMG = (
-    "CAACAgIAAx0CXBdkHQAC34lhpHKAV3nIlqfcnYmDkIhbOFTktwACFBAAAkXe2EuBs3crQ6mMdR4E"
+    "https://telegra.ph/file/c1dc3b841a5ced3cdbe4b.jpg"
+    "https://telegra.ph/file/9e1dc103aab1c41465fca.jpg"
 )
 
 PM_START_TEXT = """
@@ -252,8 +253,8 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        message.reply_animation(
-            GROUP_START_IMG,
+        message.reply_photo(
+            random.choice(GROUP_START_IMG),
             caption="<code> Akira Online \nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
@@ -262,10 +263,10 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support", url=f"https://telegram.dog/NovusSupport"
+                            text="Help Me", callback_data="aboutmanu_howto"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url="https://telegram.dog/NovusUpdates"
+                            text="About Me", callback_data="aboutmanu_"
                         ),
                     ],
                 ]
