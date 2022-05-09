@@ -457,7 +457,7 @@ def aries_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*Akira Is the redisigned version of Daisy and Saitama And Othrer for the best performance.*"
-            f"\n\nAries source code was rewritten by @IdzXartez and All Of Conrtibutor For Help Akira"
+            f"\n\nAkira source code was rewritten by @DreamerNo1 and All Of Conrtibutor For Help Akira"
             f"\n\nIf Any Question About Akira, \nLet Us Know At @NovusSupport.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -539,7 +539,7 @@ def aries_about_callback(update, context):
             f"\n1. **first, add me to your group."
             f"\n2. **then promote me as admin and give all permissions except anonymous admin."
             f"\n3. **after promoting me, type /admincache in group to update the admin list."
-            f"\n4. **add @IdzMusic to your group."
+            f"\n4. **add @TRCrazy to your group."
             f"\n5. **turn on the video chat first before start to play music.\n\n"
             f"\n📌 **if the userbot not joined to video chat, make sure if the video chat already turned on, or you can ask Admins in @idzeroidsupport.**\n"
             f"\n⚡ __Powered by Akira A.I__\n",
