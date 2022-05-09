@@ -85,12 +85,12 @@ def lawak(update, context):
     msg = update.effective_message
     msg.reply_video(
         random.choice(LAWAK_STRINGS),
-        caption=f"""<i>Powered by: Aries Robot</i> 🔥""",
+        caption=f"""<i>Powered by: Akira Robot</i> 🔥""",
         parse_mode=ParseMode.HTML,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support", url="https://t.me/idzeroidsupport"),
+                    InlineKeyboardButton("Support", url="https://t.me/NovusSupport"),
                 ],
             ]
         ),
@@ -130,7 +130,7 @@ dispatcher.add_handler(LAWAK_HANDLER)
 DIARYARYZA_HANDLER = DisableAbleCommandHandler("diaryaryza", diaryaryza, run_async=True)
 dispatcher.add_handler(DIARYARYZA_HANDLER)
 
-__mod_name__ = "Aries Extras"
+__mod_name__ = "Akira Extras"
 
 
 __command_list__ = ["aries", "diaryaryza", "lawak"]
