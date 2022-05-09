@@ -99,7 +99,7 @@ buttons = [
     [
         InlineKeyboardButton(text=" ｢ Support 」", url="http://t.me/NovusSupport"),
         InlineKeyboardButton(text=" [❌] ", callback_data="close"),
-        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/NovusUpdayes"),
+        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/NovusUpdates"),
     ],
 ]
 
