@@ -80,16 +80,16 @@ async def inline_help_func(__help__):
             input_message_content=InputTextMessageContent(
                 "Click A Button To Get Started."
             ),
-            thumb_url="https://telegra.ph/file/02fcf8117a0d6cbf5b4c6.png",
+            thumb_url="https://telegra.ph/file/4d63967bb84b4ec84cf7a.jpg",
             reply_markup=buttons,
         ),
         InlineQueryResultArticle(
             title="Support",
-            description="Official Aries Support.",
+            description="Official Akira Support.",
             input_message_content=InputTextMessageContent(
                 "https://t.me/idzeroidsupport"
             ),
-            thumb_url="https://telegra.ph/file/02fcf8117a0d6cbf5b4c6.png",
+            thumb_url="https://telegra.ph/file/4d63967bb84b4ec84cf7a.jpg",
         ),
     ]
     answerss = await alive_function(answerss)
@@ -100,26 +100,26 @@ async def alive_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/idzeroid_bot"),
+        InlineKeyboardButton("Main Bot", url="https://t.me/AkiraKeyBot"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[Aries](https://t.me/idzeroidsupport)**
+**[Akira](https://telegra.ph/file/9e1dc103aab1c41465fca.jpg)**
 **MainBot:** `{bot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME})
+**Profiles:** [Bot](t.me/{BOT_USERNAME})
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
-            description="Check Aries Status",
-            thumb_url="https://telegra.ph/file/02fcf8117a0d6cbf5b4c6.png",
+            description="Check Akira Status",
+            thumb_url="https://telegra.ph/file/4d63967bb84b4ec84cf7a.jpg",
             input_message_content=InputTextMessageContent(
-                msg, disable_web_page_preview=True
+                msg, disable_web_page_preview=False
             ),
             reply_markup=buttons,
         )
