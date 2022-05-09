@@ -73,16 +73,16 @@ GROUP_START_IMG = (
 )
 
 PM_START_TEXT = """
-Hello there, [👋](https://telegra.ph/file/ac893610cae84f302b2da.jpg) I'm {}.
+Hello there, [👋](https://telegra.ph/file/9e1dc103aab1c41465fca.jpg) I'm {}.
 Im Powerfull Management Bot And I Will Help In Managing Your Group.
-Maintained by : [Aryza](https://t.me/idzxartez)
-Founder And Dev Of : [IDZEROID SYNDICATES](https://t.me/idzeroidsupport).
+Maintained by : [Novus](https://t.me/Dreamerno1)
+Founder And Dev Of : [Akira](https://t.me/DreamerNo1    ).
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *Users, across* `{}` *chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 Made specifically to manage your group , I specialize in managing Entertainment and all type groups and channels.
-✪ Make sure you read *DETAILS* Section Below ✪ 
+✪ Make sure you read *Details* Section Below ✪ 
 """
 
 buttons = [
@@ -93,19 +93,19 @@ buttons = [
     [
         InlineKeyboardButton(
             text=" ➕ ｢ Summon Me 」➕ ",
-            url="t.me/idzeroid_bot?startgroup=true",
+            url="t.me/AkiraKeyBot?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text=" ｢ Support 」", url="http://t.me/idzeroidsupport"),
+        InlineKeyboardButton(text=" ｢ Support 」", url="http://t.me/NovusSupport"),
         InlineKeyboardButton(text=" [❌] ", callback_data="close"),
-        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/idzeroid"),
+        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/NovusUpdayes"),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [Saint Aries](https://telegra.ph/file/ac893610cae84f302b2da.jpg)
+*Main Commands :* [Novus](https://telegra.ph/file/b58caa8556e2242ead8ac.jpg )
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
@@ -118,10 +118,7 @@ HELP_STRINGS = f"""
 )
 
 
-DONATE_STRING = """Hello, glad to hear you want to donate!
- You can support the project via [pulsa](#) or by contacting @IdzXartez\
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """Join https://t.me/NovusSupport"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -222,7 +219,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="⬅️ BACK", callback_data="help_back"
+                                    text="⬅️ Back", callback_data="help_back"
                                 )
                             ]
                         ]
@@ -257,7 +254,7 @@ def start(update: Update, context: CallbackContext):
     else:
         message.reply_animation(
             GROUP_START_IMG,
-            caption="<code> Aries Online \nI am Awake Since</code>: <code>{}</code>".format(
+            caption="<code> Akira Online \nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -265,10 +262,10 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support", url=f"https://telegram.dog/idzeroidsupport"
+                            text="Support", url=f"https://telegram.dog/NovusSupport"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url="https://telegram.dog/idzeroid"
+                            text="Updates", url="https://telegram.dog/NovusUpdates"
                         ),
                     ],
                 ]
@@ -331,7 +328,7 @@ def help_button(update, context):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Support", url="https://t.me/idzeroidsupport"
+                                text="Support", url="https://t.me/NovusSupport"
                             ),
                         ],
                     ]
@@ -394,7 +391,7 @@ def aries_about_callback(update, context):
             f"\n\n ⚡️ 》 I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             f"\n\n ⚡️ 》 I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             f"\n\n ⚡️ 》 I check for admins' permissions before executing any command and more stuffs"
-            f"\n\n If you have any question about *Aries*, let us know at @IdzeroidSupport."
+            f"\n\n If you have any question about *Akira*, let us know at @NovusSupport."
             f"\n\n👇 You Can Know More About *Aries* By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -434,7 +431,7 @@ def aries_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [support](https://t.me/idzeroidsupport).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [support](https://t.me/NovusSupport).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -459,9 +456,9 @@ def aries_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*Aries Is the redisigned version of Daisy and Saitama And Othrer for the best performance.*"
-            f"\n\nAries source code was rewritten by @IdzXartez and All Of Conrtibutor For Help Aries"
-            f"\n\nIf Any Question About aries, \nLet Us Know At @Idzeroidsupport.",
+            text=f"*Akira Is the redisigned version of Daisy and Saitama And Othrer for the best performance.*"
+            f"\n\nAries source code was rewritten by @IdzXartez and All Of Conrtibutor For Help Akira"
+            f"\n\nIf Any Question About Akira, \nLet Us Know At @NovusSupport.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -517,12 +514,12 @@ def aries_about_callback(update, context):
             text=f"<b> ｢ Terms and Conditions 」</b>\n"
             f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
             f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
-            f"\n✪ Always try to keep credits, so \n  This hardwork is done by @IdzXartez spending many sleepless nights.. So, Respect it."
+            f"\n✪ Always try to keep credits, so \n  This hardwork is done by @DreamerNo1 spending many sleepless nights.. So, Respect it."
             f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
             f"\n✪ If you need to ask anything about \n  this bot, Go @Idzeroidsupport."
             f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
             f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n\nFor any kind of help, related to this bot, Join @idzeroidsupport."
+            f"\n\nFor any kind of help, related to this bot, Join @NovusSupport."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
@@ -545,7 +542,7 @@ def aries_about_callback(update, context):
             f"\n4. **add @IdzMusic to your group."
             f"\n5. **turn on the video chat first before start to play music.\n\n"
             f"\n📌 **if the userbot not joined to video chat, make sure if the video chat already turned on, or you can ask Admins in @idzeroidsupport.**\n"
-            f"\n⚡ __Powered by Aries A.I__\n",
+            f"\n⚡ __Powered by Akira A.I__\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -572,7 +569,7 @@ def aries_about_callback(update, context):
             f"\n6. **/video (name video) for download video."
             f"\n7. **/lyrics for searching lyrics.\n\n"
             f"\n📌 **Also you can download music or video with push button menu.**\n"
-            f"\n⚡ __Powered by Aries A.I__\n",
+            f"\n⚡ __Powered by Akira A.I__\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -628,10 +625,10 @@ def get_help(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support", url=f"https://telegram.dog/idzeroidsupport"
+                            text="Support", url=f"https://telegram.dog/NovusSupport"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url="https://telegram.dog/idzeroid"
+                            text="Updates", url="https://telegram.dog/NovusUpdates"
                         ),
                     ],
                     [
@@ -899,7 +896,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@IdzeroidSupport", "⚡️")
+            dispatcher.bot.sendMessage(f"@NovusSupport", "⚡️")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
