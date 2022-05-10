@@ -897,7 +897,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.send_photo(f"@NovusSupport", random.choice(GROUP_START_IMG), caption="*I'm Alive Till My Dev Restart Me! ⚡️*", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.send_photo(f"@NovusSupport", GROUP_START_IMG, caption="*I'm Alive Till My Dev Restart Me! ⚡️*", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
