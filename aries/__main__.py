@@ -3,6 +3,7 @@ import re
 import sys
 import time
 import datetime
+import random
 from sys import argv
 from typing import Optional, List
 
@@ -262,10 +263,10 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help Me", callback_data="aboutmanu_howto"
+                            text="Support", url="t.me/IDZeroidSupport"
                         ),
                         InlineKeyboardButton(
-                            text="About Me", callback_data="aboutmanu_"
+                            text="Updates", url="t.me/NovusUpdates"
                         ),
                     ],
                 ]
