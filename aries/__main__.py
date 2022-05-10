@@ -897,7 +897,17 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@NovusSupport", "⚡️")
+            dispatcher.bot.send_photo(f"@NovusSupport", random.choice(GROUP_START_IMG), caption="*I'm Alive Till My Dev Restart Me! ⚡️*", parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="[► Summon Me◄]",
+                             url="https://t.me/AkiraKeyBot?startgroup=true")
+                     ] 
+                ]
+            ),
+        )
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
